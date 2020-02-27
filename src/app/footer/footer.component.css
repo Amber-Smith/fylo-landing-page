@@ -1,0 +1,139 @@
+.bg-footer {
+  padding-top: 8rem;
+  background: hsl(216, 53%, 9%);
+}
+
+.footer-location-p {
+  margin-left: 10px;
+}
+
+.footer-location-img {
+  float: left;
+}
+
+.footer-link {
+  color: #eee;
+  font-size: 13px;
+  transition: all .3s;
+}
+
+.footer-info {
+  margin-top: 48px;
+}
+
+.ul-list-style {
+  margin-top: 34px;
+}
+
+/* Footer Icon Styling & Animations- Font Awesome */
+.icon-href {
+  background: hsl(216, 53%, 9%);
+  color: #222;
+  border-radius: 100%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  width: 40px;
+  height: auto;
+  margin: 0 2px;
+  padding-top: 6px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+.icon-href.icon:before {
+  font-family: "FontAwesome", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+.icon-href.facebook:before {
+  content: '\f09a';
+}
+
+.icon-href.twitter:before {
+  content: '\f099';
+}
+
+.icon-href.instagram:before {
+  content: '\f16d';
+}
+
+.icon-href span {
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+  right: -25px;
+  padding: 5px 7px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.icon-href span:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
+}
+
+.icon-href:hover span {
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* hover over the icons now to see the tooltips! */
+.icon-href.facebook:hover {
+  background-color: #4183d7;
+  color: #bfbfbf;
+}
+
+.icon-href.facebook span {
+  color: #4183d7;
+}
+
+.icon-href.twitter:hover {
+  background-color: #19b5fe;
+  color: #fff;
+}
+
+.icon-href.twitter span {
+  color: #19b5fe;
+}
+
+.icon-href.instagram:hover {
+  background-color: #3f729b;
+  color: #fff;
+}
+
+.icon-href.instagram span {
+  color: #3f729b;
+}
+
+/* Media Queries */
+@media screen and (max-width:576px) {
+  .ul-list-style {
+    margin-top: 0;
+  }
+
+  .footer-info {
+    margin-top: 0;
+  }
+
+  .bg-footer {
+    padding-top: 2rem;
+  }
+}

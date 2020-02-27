@@ -1,0 +1,165 @@
+.testimonals {
+  padding-top: 64px;
+  margin-top: 64px;
+}
+
+.card-bg-img {
+  top: -2rem;
+  position: absolute;
+  z-index: -1;
+  left: -1.4rem;
+}
+
+.card-format {
+  box-shadow: 10px 10px 10px #1c202c;
+  background-color: #202a3c;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 95%;
+  transition: all .5s;
+}
+
+.card-format:hover {
+  transform: scale(1.05);
+}
+
+.img-pt,
+.p-pt {
+  margin-top: 16px;
+}
+
+.p-pl {
+  padding-left: 56px;
+}
+
+.bg-card {
+  background: #1c2431;
+}
+
+.card-rounded {
+  border-radius: 16px;
+}
+
+.mt-card {
+  margin-top: 1.5rem;
+}
+
+.btn-getStarted-custom {
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  border: none;
+  color: white;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.btn-round-lg {
+  border-radius: 22.5px;
+  padding: 8px 15px;
+  margin-left: 16px;
+}
+
+.btn-getStarted-custom:hover {
+  background: #ff8796;
+}
+
+.card-h {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.small {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.w-55 {
+  width: 55%
+}
+
+.p-card {
+  padding: 16px 32px;
+}
+
+.position-card {
+  position: relative;
+  top: 9rem;
+}
+
+.input-rounded {
+  border-radius: 22.5px;
+}
+
+.input-format {
+  width: auto;
+}
+
+/* Media Queries */
+@media screen and (max-width:576px) {
+
+  .card-xs-pl {
+    padding-left: 0;
+  }
+
+  .mt-card {
+    margin-top: 64px;
+  }
+
+  .align-row {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+
+  .w-55 {
+    width: auto;
+  }
+
+  .position-card {
+    position: static;
+  }
+
+  .form-inline {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .btn-round-lg {
+    margin-left: 0;
+    padding: auto
+  }
+
+  .input-format {
+    width: auto;
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .card-format {
+    margin-bottom: 20px;
+  }
+
+  .card-m-media {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .input-rounded,
+  .btn-round-lg {
+    margin-top: 8px;
+  }
+
+  .btn-round-lg {
+    margin-left: 4px;
+  }
+
+  .input-format {
+    width: auto;
+  }
+}

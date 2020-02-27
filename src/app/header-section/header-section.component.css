@@ -1,0 +1,105 @@
+.header {
+  background: url('../../assets/images/bg-curvy-desktop.svg') no-repeat, #1c2431;
+  background-position: center bottom;
+  background-size: contain;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.header-logo {
+  float: left;
+  padding: 0 32px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Custom Button Styles and Animation */
+div button {
+  --c: #65e2d9;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 2.5em;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+  background-color: var(--c);
+}
+
+div button span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background: #ff8796;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 35%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+div button:hover {
+  color: white;
+}
+
+div button:hover span {
+  transform: translateY(0) scale(2);
+}
+
+div button span:nth-child(1) {
+  --n: 1;
+}
+
+
+div button span:nth-child(2) {
+  --n: 2;
+}
+
+div button span:nth-child(3) {
+  --n: 3;
+}
+
+div button span:nth-child(4) {
+  --n: 4;
+}
+
+/* Media Queries */
+@media screen and (max-width:576px) {
+  .header {
+    height: auto;
+    background: url('../../assets/images/bg-curvy-mobile.svg') no-repeat, #1c2431;
+    background-position: center bottom;
+    background-size: contain;
+  }
+
+  .header-logo {
+    padding: 0;
+  }
+
+  .header-logo {
+    width: 150px;
+    margin-left: 8px;
+  }
+
+  #img-fluid-logo {
+    max-width: 65%;
+  }
+
+  .navbar-expand .navbar-collapse {
+    flex-basis: 305px;
+  }
+}
